@@ -12,4 +12,4 @@ RUN apk add git # buildkit
 
 # 设置工作目录
 WORKDIR /home/noroot/app
-RUN corepack enable && corepack prepare pnpm@9.15.3 --activate && npm config set registry https://registry.npmmirror.com && pnpm config set registry https://registry.npmmirror.com
+RUN corepack enable && corepack prepare pnpm@9.15.3 --activate && npm config set registry https://registry.npmjs.org && pnpm config set registry https://registry.npmjs.org
